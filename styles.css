@@ -1,0 +1,132 @@
+body {
+  background-color: #eef2ff;
+  color: #17213a;
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+h1 {
+  color: #1f3a93;
+  font-size: 28px;
+}
+
+h2 {
+  color: #3157d5;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #3157d5;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 16px;
+  margin: 12px 0;
+  border: 1px solid #c3cbe6;
+}
+
+input,
+textarea {
+  width: 280px;
+  max-width: 100%;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+form p {
+  display: grid;
+  gap: 6px;
+}
+
+button {
+  border: 0;
+  border-radius: 6px;
+  background-color: #3157d5;
+  color: #ffffff;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1f3a93;
+}
+
+.card {
+  list-style: none;
+  padding: 0;
+}
+
+.guestbook-entry {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid #c3cbe6;
+}
+
+.guestbook-entry:first-child {
+  padding-top: 0;
+}
+
+.guestbook-entry:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.guestbook-entry-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.guestbook-entry-details span {
+  color: #5a6478;
+  font-size: 14px;
+}
+
+.guestbook-entry p {
+  flex: 1;
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+#notice {
+  color: #b42318;
+}
+
+footer {
+  color: #5a6478;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .guestbook-entry {
+    flex-wrap: wrap;
+  }
+}
+
+body.dark,
+body.dark .card {
+  background-color: #222222;
+  color: #eeeeee;
+}
